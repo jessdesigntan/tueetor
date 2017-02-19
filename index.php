@@ -6,8 +6,33 @@
   <body>
     <?php navbar(); ?>
     <div class="hero-banner">
-      <div class="text">
-        <h1>Connect Learners and Trainers</h1>
+      <div>
+        <div class="text">
+          <h1>Connect Learners and Trainers</h1>
+        </div>
+        <div class="form">
+          <form class="search-bar" role="search">
+            <div class="input-group">
+              <div class="input-group-btn">
+                <label>I'm looking for</label>
+                <button type = "button" class = "btn btn-default" tabindex = "-1">Trainers</button>
+                <button style="float:right; width:20px;" type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown" tabindex = "-1">
+                   <span class = "caret"></span>
+                   <span class = "sr-only">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                   <li><a href="#">Trainers</a></li>
+                   <li><a href="#">Learners</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div>
+                <label>What do you want to learn?</label>
+                <input type = "text" class = "form-control" placeholder="Maths, English, Chemistry ...">
+                <button type="submit" class="hidden-submit"></button>
+              </div>
+            </div><!-- /input-group -->
+          </form>
+        </div>
       </div>
     </div>
 
