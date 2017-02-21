@@ -5,16 +5,29 @@
 
 @font-face {
     font-family: 'Gotham Book'; /*a name to be used later*/
-    src: url('../fonts/GothamRounded-Book.otf'); /*URL to font*/
+    src: url('../fonts/Gotham-Light.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'Gotham Medium'; /*a name to be used later*/
-    src: url('../fonts/GothamRounded-Medium.otf'); /*URL to font*/
+    src: url('../fonts/Gotham-Medium.ttf'); /*URL to font*/
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Gotham Medium', sans-serif;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Gotham Book', sans-serif;
+  height: 100%;
+  padding-top: 70px;
 }
 
 .navbar-default {
@@ -34,9 +47,20 @@ body {
   margin: 0 auto;
 }
 
-.hero-banner {
+.main-banner-bg {
   background: url(../images/main.jpg) center center no-repeat scroll;
-  background-size: 100%;
+}
+
+.subject-banner-bg {
+  background: url(../images/subject-banner.jpg) center center no-repeat scroll;
+}
+
+.all-subject-banner-bg {
+  background: url(../images/all-subject-banner.jpg) center center no-repeat scroll;
+}
+
+.hero-banner {
+  background-size: cover;
   display: table;
   width: 100%;
   height: auto;
@@ -47,6 +71,14 @@ body {
   color: var(--primary-color);
   font-size: 42px;
   margin-bottom: 20px;
+}
+
+.hero-banner .text.white > h1, .hero-banner .text.white {
+  color: white;
+}
+
+.hero-banner .text.green > h1, .hero-banner .text.green {
+  color: var(--primary-color);
 }
 
 .hero-banner > div {
@@ -97,11 +129,10 @@ body {
 
 @media only screen and (max-width: 767px) {
   .hero-banner {
-    background: url(../images/main-mobile.jpg) center center no-repeat scroll;
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
 
-  .hero-banner > .text > h1 {
+  .hero-banner .text > h1 {
     font-size: 30px;
     padding: 0 30px;
   }
@@ -131,6 +162,31 @@ body {
   text-align: left;
 }
 
+.section > .row {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.section > .row:last-child {
+  border-bottom: none;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section ul li {
+  padding-left: 1em;
+  text-indent: -.7em;
+  margin-bottom: 20px;
+}
+
+.section ul li::before {
+  content: "• ";
+  color: var(--primary-color);
+}
+
 @media only screen and (max-width: 767px) {
   .section > div {
     padding: 20px;
@@ -141,6 +197,10 @@ body {
   margin-bottom: 10px;
   text-align: center;
   font-size: 30px;
+}
+
+.section h2 {
+  text-align: center;
 }
 
 .section > div > h1::after {
@@ -155,7 +215,6 @@ body {
 .section img.hero {
   height: 80px;
   margin-bottom: 30px;
-  margin-left: 25px;
   display: block;
 }
 
@@ -165,7 +224,6 @@ body {
   font-family: 'Gotham Medium', sans-serif;
   font-size: 18px;
   display: block;
-  margin-left: 25px;
   margin-bottom: 30px;
 }
 
@@ -188,7 +246,6 @@ body {
 
 .section .list > a {
   color: var(--primary-color);
-  margin-left: 25px;
   font-size: 12px;
 }
 
@@ -216,6 +273,10 @@ body {
 
   .section img.hero {
     margin: 30px auto;
+  }
+
+  .section img.hero.left {
+    margin: 30px 0;
   }
 }
 
@@ -471,4 +532,119 @@ input {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+.search-page {
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.search-page > div {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.search-page > div:first-child {
+  float: left;
+  border-right: 1px solid #eee;
+}
+
+.search-page > div:last-child {
+  background-color: white;
+  float: right;
+}
+
+.form-row {
+  display: block;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  width: 100%
+}
+
+.form-row label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-row > div {
+  padding: 10px 0 10px 40px;
+}
+
+.form-row > div:first-child {
+  border-right: 1px solid #eee;
+  width: 50%;
+  float: left;
+}
+
+.form-row > div:last-child {
+  width: 50%;
+}
+
+.form-row input {
+  background: transparent;
+  color: var(--primary-color);
+  font-family: 'Gotham Medium', sans-serif;
+}
+
+.filter-option {
+  padding: 10px 40px;
+}
+
+.filter-option select {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .search-page > div:first-child {
+    width: 100%;
+  }
+
+  .form-row > div {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+  }
+
+  .form-row > div:first-child {
+    width: 100%;
+    border-right: none;
+  }
+
+  .form-row > div:last-child {
+    width: 100%;
+  }
+}
+
+/*===========================
+  COLOR UTILS
+===========================*/
+.primary-color {
+  color: var(--primary-color);
+}
+
+/*===========================
+  HIDE SHOW UTILS FOR DESKTOP AND MOBILE
+===========================*/
+.show-mobile {
+  display: none !important;
+}
+
+.hide-mobile {
+  display: block !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .show-mobile {
+    display: block !important;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
 }

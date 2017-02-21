@@ -5,7 +5,7 @@
   <?php head("Tueetor"); ?>
   <body>
     <?php navbar(); ?>
-    <div class="hero-banner">
+    <div class="hero-banner main-banner-bg">
       <div>
         <div class="text">
           <h1>Connect Learners and Trainers</h1>
@@ -39,7 +39,6 @@
     <div class="section">
       <div class="row">
         <h1>Browse Top Subjects</h1>
-
         <div class="col-sm-3">
           <img class="hero" src="images/olevel.png">
           <div class="list">
@@ -95,17 +94,43 @@
     <div class="section grey-bg">
       <div class="row">
         <h1>Featured Trainers</h1>
-        <div class="col-sm-3">
-          <?php trainerCard(); ?>
+        <div id="featured-trainers-desktop" class="hide-mobile">
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
         </div>
-        <div class="col-sm-3">
-          <?php trainerCard(); ?>
-        </div>
-        <div class="col-sm-3">
-          <?php trainerCard(); ?>
-        </div>
-        <div class="col-sm-3">
-          <?php trainerCard(); ?>
+
+        <div id="featured-trainers-mobile" class="show-mobile">
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
+          <div class="col-sm-3">
+            <?php trainerCard(); ?>
+          </div>
         </div>
       </div>
     </div>
@@ -140,5 +165,17 @@
     </div>
 
     <?php footer(); ?>
+    <script>
+      $('#featured-trainers-desktop').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
+      $('#featured-trainers-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    </script>
   </body>
 </html>
