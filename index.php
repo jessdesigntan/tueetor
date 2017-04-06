@@ -11,7 +11,7 @@
           <h1>Connect Learners and Trainers</h1>
         </div>
         <div class="form">
-          <form class="search-bar" role="search">
+          <form class="search-bar" role="search" action="search.php">
             <div class="input-group">
               <div class="input-group-btn">
                 <label>I'm looking for</label>
@@ -43,48 +43,48 @@
           <img class="hero" src="images/olevel.png">
           <div class="list">
             <p>Academics</p>
-            <div><img src="images/soccer.svg"><a href="#">English</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Chinese</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Additional Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Elementary Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Geography</a></div>
-            <a href="#">Show more</a>
+            <div><img src="images/soccer.svg"><a href="search.php">English</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Chinese</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Additional Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Elementary Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Geography</a></div>
+            <a href="subject.php">Show more</a>
           </div>
         </div>
         <div class="col-sm-3">
           <img class="hero" src="images/fitness.png">
           <div class="list">
             <p>Fitness</p>
-            <div><img src="images/soccer.svg"><a href="#">English</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Chinese</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Additional Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Elementary Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Geography</a></div>
-            <a href="#">Show more</a>
+            <div><img src="images/soccer.svg"><a href="search.php">English</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Chinese</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Additional Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Elementary Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Geography</a></div>
+            <a href="subject.php">Show more</a>
           </div>
         </div>
         <div class="col-sm-3">
           <img class="hero" src="images/aesthetics.png">
           <div class="list">
             <p>Aesthetics</p>
-            <div><img src="images/soccer.svg"><a href="#">English</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Chinese</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Additional Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Elementary Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Geography</a></div>
-            <a href="#">Show more</a>
+            <div><img src="images/soccer.svg"><a href="search.php">English</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Chinese</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Additional Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Elementary Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Geography</a></div>
+            <a href="subject.php">Show more</a>
           </div>
         </div>
         <div class="col-sm-3">
           <img class="hero" src="images/others.png">
           <div class="list">
             <p>Others</p>
-            <div><img src="images/soccer.svg"><a href="#">English</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Chinese</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Additional Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Elementary Mathematics</a></div>
-            <div><img src="images/soccer.svg"><a href="#">Geography</a></div>
-            <a href="#">Show more</a>
+            <div><img src="images/soccer.svg"><a href="search.php">English</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Chinese</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Additional Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Elementary Mathematics</a></div>
+            <div><img src="images/soccer.svg"><a href="search.php">Geography</a></div>
+            <a href="subject.php">Show more</a>
           </div>
         </div>
 

@@ -56,7 +56,7 @@ function navbar() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="70"></a>
+      <a class="navbar-brand" href="index.php"><img src="images/logo.jpg" width="100"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,14 +68,16 @@ function navbar() {
         <button type="submit" class="btn btn-default">Submit</button>
       </form>-->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
+        <li><a data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
         <button type="button" class="btn btn-success navbar-btn">Become a Trainer</button>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <?php
+  loginModal();
+  signupModal();
 }
 
 function trainerCard() {
@@ -84,7 +86,7 @@ function trainerCard() {
     <a href="#">
       <img class="profile-img" src="images/profile.jpg">
       <h1>Kourtney Seah</h1>
-      <h2>Tutor</h2>
+      <h2>Trainer</h2>
     </a>
     <div class="review">
       <div>
@@ -104,7 +106,7 @@ function trainerCard() {
       <span class="label label-default">Biology</span>
     </div>
     <div class="btn">
-      <a class="line-btn line-btn-green">View Profile</a>
+      <a href="profile.php" class="line-btn line-btn-green">View Profile</a>
     </div>
   </div><!-- end of card -->
 <?php
@@ -159,6 +161,139 @@ function footer() {
       <p class="text-center">© Tueetor 2017</p>
     </div>
   </div>
+<?php
+}
+
+function listingCard($ratings) {
+?>
+<div class="listing-card">
+  <div class="listing-header">
+    <div class="left">
+      <a href="profile.php">
+        <img src="images/profile.jpg">
+        <span class="name">Kourtney Seah
+      </a>
+      <p class="type">Trainer</p>
+      <?php if ($ratings != 0) { ?>
+        <p class="review"><?=$ratings;?>/5 Stars</p>
+      <?php } else { ?>
+        <p class="review" style="color:#999;">unrated</p>
+      <?php } ?>
+    </div>
+    <div class="right">
+      <a class="btn btn-default">
+        <span class="glyphicon glyphicon-map-marker"></span>
+      </a>
+      <a class="primary-btn">Message</a>
+    </div>
+  </div><!-- ./listing-header -->
+  <div class="listing-table">
+    <table class="table table-responsive table-hover">
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Level</th>
+          <th>Per Session</th>
+          <th>Per Month</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Additional Mathematics</td>
+        <td>Secondary</td>
+        <td>50</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Additional Mathematics</td>
+        <td>Secondary</td>
+        <td>50</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Additional Mathematics</td>
+        <td>Secondary</td>
+        <td>50</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Additional Mathematics</td>
+        <td>Secondary</td>
+        <td>50</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Additional Mathematics</td>
+        <td>Secondary</td>
+        <td>50</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Additional Mathematics</td>
+        <td>Secondary</td>
+        <td>50</td>
+        <td>120</td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+<?php
+}
+
+function loginModal() {
+?>
+<div class="modal fade loginModal" tabindex="-1" role="dialog" id="loginModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/logo.jpg" width="200">
+        <h1>Welcome back!</h1>
+        <form action="index.php" class="form-style">
+          <div>
+            <label>Email Address</label>
+            <input type="text" class="form-control">
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password" class="form-control">
+          </div>
+          <a class="link">Forgot Password?</a>
+          <label><input type="checkbox"> Remember me</label>
+          <button type="submit" class="btn primary-btn">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer text-center">
+        <a data-dismiss="modal" data-toggle="modal" data-target="#signupModal" class="link">No account yet? Sign up here.</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<?php
+}
+
+function signupModal() {
+?>
+<div class="modal fade loginModal" tabindex="-1" role="dialog" id="signupModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <img src="images/logo.jpg" width="200">
+        <h1>Sign up</h1>
+        <div class="signup-btns">
+          <a href="learnerSignup.php" class="t-btn primary-btn btn-block">As learner</a>
+          <p>or</p>
+          <a href="trainerSignup.php" class="t-btn secondary-btn btn-block">As trainer</a>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <?php
 }
 ?>
