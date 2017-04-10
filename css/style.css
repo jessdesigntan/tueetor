@@ -198,6 +198,18 @@ body {
   margin-bottom: 20px;
 }
 
+.section ul li.verified::after {
+  content: "Verified";
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  font-size: 11px;
+  font-weight: bolder;
+  background-color: var(--primary-color);
+}
+
 .section ul li::before {
   content: "• ";
   color: var(--primary-color);
@@ -427,10 +439,14 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.footer {
+  border-top: 1px solid #eee;
+}
+
 .footer > div {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 0 30px 0;
   text-align: left;
   display: block;
 }
@@ -939,6 +955,8 @@ thead {
   display: inline-block;
   min-width: 100px;
   text-align: center;
+  font-size: 13px;
+  border-radius: 3px;
 }
 
 .t-btn:hover {
@@ -953,6 +971,10 @@ thead {
   background-color: var(--secondary-color);
 }
 
+.t-btn.light-btn {
+  background-color: #999;
+}
+
 .signup-btns p {
   margin: 10px auto;
   color: #999;
@@ -963,8 +985,22 @@ thead {
 
 .profile-block {
   display: block;
-  border: 1px solid #eee;
+  border: 1px solid #ddd;
   background-color: white;
+  margin-bottom: 20px;
+}
+
+.profile-block.table {
+  border: none;
+}
+
+.profile-block.table .glyphicon {
+  color: #999;
+}
+
+.profile-block.table .title {
+  border: 1px solid #ddd;
+  border-bottom: none;
 }
 
 .profile-block > * {
@@ -977,6 +1013,7 @@ thead {
 
 .profile-block .profile-img {
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 .profile-block .user {
@@ -986,6 +1023,33 @@ thead {
 .profile-block .user > * {
   display: table-cell;
   vertical-align: middle;
+}
+
+.profile-block h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-block .user-info {
+    text-align: center;
+  }
+}
+
+.label {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  padding: 9px 7px 7px 7px;
+}
+
+.label.trainer {
+  background-color: var(--primary-color);
+}
+
+.label.learner {
+  background-color: var(--secondary-color);
 }
 
 .register-container {
@@ -1003,4 +1067,9 @@ thead {
   display: block;
   margin: 20px auto;
   border: 2px solid #ddd;
+}
+
+.mTop20 {
+  display: block;
+  margin-top: 20px;
 }

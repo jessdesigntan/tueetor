@@ -9,7 +9,7 @@
     <meta property="og:title" content="Dear Carrie is a community of readers and writers offering unique perspectives on mental-health related issues." />
     <title><?=$title;?></title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -70,7 +70,7 @@ function navbar() {
       <ul class="nav navbar-nav navbar-right">
         <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
         <li><a data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
-        <button type="button" class="btn btn-success navbar-btn">Become a Trainer</button>
+        <a href="trainerSignup.php" class="btn btn-success navbar-btn">Become a Trainer</a>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -262,7 +262,7 @@ function loginModal() {
           </div>
           <a class="link">Forgot Password?</a>
           <label><input type="checkbox"> Remember me</label>
-          <button type="submit" class="btn primary-btn">Login</button>
+          <button type="submit" class="btn primary-btn btn-block">Login</button>
         </form>
       </div>
       <div class="modal-footer text-center">

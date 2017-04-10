@@ -160,7 +160,7 @@
       <div class="text">
         <h1>Share your knowledge</h1>
         <p>Everyone has a skill to share with the world. Earn money doing it on Tueetor.</p>
-        <a class="line-btn line-btn-white">Become a tutor</a>
+        <a href="trainerSignup.php" class="line-btn line-btn-white">Become a tutor</a>
       </div>
     </div>
 
