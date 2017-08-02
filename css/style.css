@@ -30,6 +30,13 @@ body {
   padding-top: 70px;
 }
 
+input {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
 .navbar-default {
   background-color: white;
 }
@@ -40,6 +47,7 @@ body {
 
 .navbar {
   margin-bottom: 0;
+  z-index: 9999;
 }
 
 .navbar .container-fluid {
@@ -722,6 +730,10 @@ input {
   color: var(--primary-color);
 }
 
+.secondary-color {
+  color: var(--secondary-color);
+}
+
 /*===========================
   HIDE SHOW UTILS FOR DESKTOP AND MOBILE
 ===========================*/
@@ -913,6 +925,20 @@ thead {
   border: 1px solid #eee;
   height: 50px;
   border-radius: 0;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.form-style input[type=checkbox] {
+  margin-right: 10px;
+  margin-top: 0;
+}
+
+.form-style textarea {
+  border: 1px solid #eee;
+  border-radius: 0;
+  width: 100%;
+  padding: 20px;
 }
 
 .form-style label {
@@ -1072,4 +1098,301 @@ thead {
 .mTop20 {
   display: block;
   margin-top: 20px;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.dashboard-nav {
+  border-right: 1px solid #eee;
+}
+
+.dashboard-nav ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.dashboard-nav ul li a {
+  margin: 15px 0 15px -5px;
+  padding-left: 10px;
+  display: block;
+  font-size: 16px;
+  color: #bbb;
+}
+
+.dashboard-nav ul li.active a {
+  color: black;
+  border-left: 2px solid black;
+}
+
+.dashboard-nav ul li a:hover {
+  color: black;
+  border-left: 2px solid #bbb;
+}
+
+.dashboard-nav ul li.active a:hover {
+  color: black;
+  border-left: 2px solid black;
+}
+
+.profile-table {
+  width: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+  .profile-table {
+    width: 100%;
+  }
+}
+
+.profile-table.table > tbody > tr > td {
+  border: none;
+}
+
+.profile-table.table > tbody > tr > td:first-child {
+  font-weight: bold;
+}
+
+.line-search {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-top: 5px;
+  font-size: 20px;
+  background: url(../images/icon-search.svg) no-repeat center;
+  background-position: top left;
+  background-size: 35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.shortlist-card {
+  display: table;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.shortlist-card > .profile {
+  display: table;
+  width: 100%;
+  padding: 20px;
+}
+
+.shortlist-card > .action {
+  display: table-cell;
+  vertical-align: middle;
+  width: 15%;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.shortlist-card > .action img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+.shortlist-card > .date {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 15%;
+  padding: 20px;
+  color: #999;
+}
+
+.shortlist-card > .profile > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.shortlist-card img.profile-img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.shortlist-card > .profile .profile-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.shortlist-card > .profile .rate {
+  color: var(--primary-color);
+  text-align: right;
+}
+
+.shortlist-card > .profile .profile-msg {
+  color: #999;
+}
+
+p.box {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.review-average > p.small {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.review-average > p.review-grade {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.review-average .review {
+  display: inline-block;
+}
+
+.review-average .review .glyphicon {
+  color: #e8dd28;
+  font-size: 20px;
+}
+
+.form-style.add-subject > .row > div:first-child {
+  border-right: 1px solid #eee;
+  padding-right: 30px;
+}
+
+.form-style.add-subject > .row > div > div {
+  margin-bottom: 20px;
+}
+
+.form-style.add-subject > .row > div > div > label {
+  display: inline-block;
+}
+
+.form-style.add-subject > .row > div > div > .glyphicon {
+  color: #999;
+  display: inline-block;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tooltip .glyphicon {
+  color: #999;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+    opacity: 0;
+    /* Position the tooltip */
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+    z-index: 2;
+    visibility: visible;
+}
+
+.form-style input[type="text"].inline-input {
+  display: inline-block;
+  width: 150px;
+  margin-right: 5px;
+}
+
+.radio input[type=radio] {
+  display: none;
+}
+.radio input:checked+.outer {
+    border: 1px solid #09c1e2;
+}
+
+.radio .outer {
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+    border: 1px solid #bcbcbc;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.radio .inner {
+    width: 8px;
+    height: 8px;
+    display: block;
+    margin: 4px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.radio input:checked+.outer .inner {
+    opacity: 1;
+}
+
+.radio .inner {
+    background-color: #09c1e2;
+}
+
+a.inline.cboxElement {
+  display: inline-block;
+  outline: 0;
+}
+
+.timeslot {
+  position: relative;
+}
+
+.timeslot input {
+  background: url(../images/calendar.svg) no-repeat center right;
+  background-size: 30px;
+  background-position: 10px;
+  padding-left: 50px !important;
+}
+
+.timeslot a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 24px;
+  background-color: white;
+  opacity: 0;
+}
+
+.timeslot a:hover {
+  opacity: 0.3;
+}
+
+.glyphicon {
+  position: static;
+}
+
+li.profile img {
+    border-radius: 50%;
+    width: 30px;
+    margin: -8px 10px -8px 0;
 }

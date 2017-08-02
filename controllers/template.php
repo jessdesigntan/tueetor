@@ -71,6 +71,21 @@ function navbar() {
         <li><a data-toggle="modal" data-target="#loginModal">Login</a></li>
         <li><a data-toggle="modal" data-target="#signupModal">Sign Up</a></li>
         <a href="trainerSignup.php" class="btn btn-success navbar-btn">Become a Trainer</a>
+        <li class="dropdown hide-mobile profile">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="images/profile.jpg">
+            Jess
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="dashboard.php">Profile</a></li>
+            <li><a href="add-subject.php">Add Subject</a></li>
+            <li><a href="schedule.php">Schedule</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="shortlist.php">Shortlist</a></li>
+            <li><a href="review.php">Reviews</a></li>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
