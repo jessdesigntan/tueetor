@@ -21,29 +21,29 @@
         </div>
         <div class="col-sm-10">
           <div class="dashboard-content">
-            <div class="row">
-              <div class="col-sm-12">
                 <div class="primary-color uppercase">Request for a review</div>
                 <hr/>
                 <p class="box small">
                   Instructors with good reviews are generally more sought after. Invite students past and present - even if you did not find them through Tueetor - to help build your scorecard.<br/><br/>
                   For authentication purposes, we only accept reviews from registered users. If the student you are inviting does not have a Tueetor account, he or she will be required to register one (for free). A gentle reminder: location-related and/or device information is collected during account registration and we conduct checks regularly. Tueetor is committed to the credentials of its tutors.
                 </p>
+
                 <form class="form-style">
-                  <div>
-                    <label>Student Name</label>
-                    <input type="text">
-                  </div>
-                  <div>
-                    <label>Student Email Address</label>
-                    <input type="text">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <label>Student Name</label>
+                      <input type="text">
+                    </div>
+                    <div class="col-sm-6">
+                      <label>Student Email Address</label>
+                      <input type="text">
+                    </div>
                   </div>
                   <button type="submit" class="btn primary-btn">Submit</button>
                 </form>
-              </div>
-              <div class="col-sm-12">
+
                 <div class="review-average">
-                  <div class="primary-color uppercase">Current Rating</div>
+                  <div class="primary-color uppercase mTop20">Current Rating</div>
                   <hr/>
                   <p class="review-grade">
                     Excellent
@@ -78,7 +78,6 @@
                   </div>
                 </div>
                 <?php } ?>
-              </div>
             </div>
 
 

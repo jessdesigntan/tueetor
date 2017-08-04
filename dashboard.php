@@ -33,7 +33,7 @@
                     <div class="mTop20"></div>
                     <h1>Kourtney Seah, 22</h1>
                     <p>Female</p>
-                    <a href="#" class="t-btn secondary-btn">Edit Profile</a>
+                    <a href="edit-profile.php" class="t-btn secondary-btn">Edit Profile</a>
                     <hr/>
                     <p>"Enjoy reading broadly, professionally and generally. My emphasis is to help students in the application side of the knowledge learned, Students learn well when presented with alternative solutions and flexibility. A relax learning atmosphere greatly improves understanding and grades, I do provide inputs to projects and assignments."</p>
                   </div>

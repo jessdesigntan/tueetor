@@ -1118,12 +1118,14 @@ thead {
   padding-left: 10px;
   display: block;
   font-size: 16px;
-  color: #bbb;
+  color: black;
+  border-left: 2px solid white;
 }
 
 .dashboard-nav ul li.active a {
-  color: black;
-  border-left: 2px solid black;
+  font-family: 'Gotham Medium', sans-serif;
+  color: var(--primary-color);
+  border-left: 2px solid var(--primary-color);
 }
 
 .dashboard-nav ul li a:hover {
@@ -1395,4 +1397,28 @@ li.profile img {
     border-radius: 50%;
     width: 30px;
     margin: -8px 10px -8px 0;
+}
+
+.file {
+  visibility: hidden;
+  position: absolute;
+}
+
+.mBottom20 {
+  margin-bottom: 20px;
+}
+
+.form-style .input-group .input-group-btn button, .form-style .input-group input {
+  height: 50px;
+  border: 1px solid #ccc;
+}
+
+.float-right {
+  float: right;
+}
+
+.thumb100-round {
+  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 20px;
 }
