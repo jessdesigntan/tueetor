@@ -135,25 +135,17 @@
       </div>
     </div>
 
-    <div class="section how-it-works">
-      <div class="row">
-        <h1>How it works</h1>
-        <div class="col-sm-4">
-          <img src="images/subject-search.png">
-          <h1>1. Add Subject</h1>
-          <p>Tell us what you need,<br/>and we find you an instructor.</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="images/chat.png">
-          <h1>2. Chat</h1>
-          <p>Talk to potential tutors<br/>and arrange a schedule</p>
-        </div>
-        <div class="col-sm-4">
-          <img src="images/learn.png">
-          <h1>3. Learn</h1>
-          <p>Lorem ipsum dolor sit amet,<br/>consectetuer adipiscing elit</p>
+    <div class="section mobile-app-section">
+      <img src="images/phone.png" width="300" class="hide-mobile wow fadeInLeft">
+      <div class="wow fadeInDown">
+        <h2>Tueetor in your pocket!</h2>
+        <p class="lead">Get our app, it's the fastest way start connecting to tutors.</p>
+        <div class="buttons">
+          <a target="_blank" href="https://itunes.apple.com/in/app/tueetor-find-trainer-and-learner-instantly-24x7/id1228694515?mt=8"><img src="images/app-icon-ios.png" width="150"></a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.tueetor&hl=en"><img src="images/app-icon-android.png" width="150"></a>
         </div>
       </div>
+      <img src="images/phone.png" width="300" class="show-mobile">
     </div>
 
     <div class="tutor-banner">

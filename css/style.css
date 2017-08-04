@@ -1655,3 +1655,50 @@ tr.empty td > span {
   margin: 20px auto ;
   text-align: center;
 }
+
+.mobile-app-section {
+  max-width: 800px;
+  padding-top: 50px;
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mobile-app-section h2 {
+  text-align: left;
+}
+
+.mobile-app-section > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mobile-app-section > img {
+  margin-right: 30px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .mobile-app-section {
+    max-width: none;
+    padding: 30px 20px 0 20px;
+  }
+
+  .mobile-app-section > * {
+    display: block;
+  }
+
+  .mobile-app-section > img {
+    margin: 0 auto;
+  }
+
+  .mobile-app-section h2, .mobile-app-section p  {
+    text-align: center;
+  }
+
+  .mobile-app-section .buttons {
+    display: block;
+    text-align: center;
+  }
+}
