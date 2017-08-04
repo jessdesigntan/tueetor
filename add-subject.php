@@ -13,7 +13,7 @@
               <li><a href="dashboard.php">Profile</a></li>
               <li class="active"><a href="subjects.php">Subjects</a></li>
               <li><a href="schedule.php">Schedule</a></li>
-              <li><a href="#">Messages</a></li>
+              <li><a href="messages.php">Messages</a></li>
               <li><a href="shortlist.php">Shortlist</a></li>
               <li><a href="review.php">Reviews</a></li>
             </ul>
