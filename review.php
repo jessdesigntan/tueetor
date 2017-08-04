@@ -57,27 +57,42 @@
                   </p>
                 </div>
 
-                <form>
+                <form class="mBottom20">
                   <input type="text" placeholder="Search anything" class="line-search">
                 </form>
 
-                <?php for ($i = 0; $i <= 3; $i++) { ?>
-                <div class="shortlist-card">
-                  <div class="profile">
-                    <a href="profile.php"><img class="profile-img" src="images/profile.jpg"></a>
-                    <div class="profile-content">
-                      <a href="profile.php">
-                        <div class="profile-name">Candice Koh</div>
-                        <div class="profile-msg">Potential tutee for Monday night</div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="date small">
-                    Rated<br/>
-                    21 Jul 2017
-                  </div>
-                </div>
-                <?php } ?>
+                <table class="table table-responsive profile-table table-striped table-hover table-bordered" style="width:100%;">
+                  <thead>
+                    <tr>
+                      <td>Name</td>
+                      <td>Email</td>
+                      <td>Request Sent</td>
+                      <td>Review Received</td>
+                      <td>Status</td>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Candice Koh</td>
+                    <td>candice@hotmail.com</td>
+                    <td>17 Jul 2017</td>
+                    <td>18 Jul 2017</td>
+                    <td>Rated</td>
+                  </tr>
+                  <tr>
+                    <td>Candice Koh</td>
+                    <td>candice@hotmail.com</td>
+                    <td>17 Jul 2017</td>
+                    <td></td>
+                    <td>Pending</td>
+                  </tr>
+                  <tr>
+                    <td>Candice Koh</td>
+                    <td>candice@hotmail.com</td>
+                    <td>17 Jul 2017</td>
+                    <td></td>
+                    <td>Pending</td>
+                  </tr>
+                </table>
             </div>
 
 
