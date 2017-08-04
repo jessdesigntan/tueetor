@@ -1702,3 +1702,10 @@ tr.empty td > span {
     text-align: center;
   }
 }
+
+
+.trainer-card .tag {
+  display: block;
+  height: 57px;
+  overflow: hidden;
+}

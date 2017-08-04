@@ -119,6 +119,12 @@ function trainerCard() {
       <span class="label label-default">Math</span>
       <span class="label label-default">POA</span>
       <span class="label label-default">Biology</span>
+      <span class="label label-default">Math</span>
+      <span class="label label-default">POA</span>
+      <span class="label label-default">Biology</span>
+      <span class="label label-default">Math</span>
+      <span class="label label-default">POA</span>
+      <span class="label label-default">Biology</span>
     </div>
     <div class="btn">
       <a href="profile.php" class="line-btn line-btn-green">View Profile</a>
