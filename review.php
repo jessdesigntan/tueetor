@@ -11,7 +11,7 @@
           <div class="dashboard-nav">
             <ul>
               <li><a href="dashboard.php">Profile</a></li>
-              <li><a href="add-subject.php">Add Subject</a></li>
+              <li><a href="subjects.php">Subjects</a></li>
               <li><a href="schedule.php">Schedule</a></li>
               <li><a href="#">Messages</a></li>
               <li><a href="shortlist.php">Shortlist</a></li>

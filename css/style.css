@@ -1122,12 +1122,6 @@ thead {
   border-left: 2px solid white;
 }
 
-.dashboard-nav ul li.active a {
-  font-family: 'Gotham Medium', sans-serif;
-  color: var(--primary-color);
-  border-left: 2px solid var(--primary-color);
-}
-
 .dashboard-nav ul li a:hover {
   color: black;
   border-left: 2px solid #bbb;
@@ -1136,6 +1130,12 @@ thead {
 .dashboard-nav ul li.active a:hover {
   color: black;
   border-left: 2px solid black;
+}
+
+.dashboard-nav ul li.active a, .dashboard-nav ul li.active a:hover {
+  font-family: 'Gotham Medium', sans-serif;
+  color: var(--primary-color);
+  border-left: 2px solid var(--primary-color);
 }
 
 .profile-table {
@@ -1421,4 +1421,15 @@ li.profile img {
   border-radius: 50%;
   width: 100px;
   margin-bottom: 20px;
+}
+
+.dashboard-content .back-link {
+  color: #999;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.dashboard-content .back-link::before {
+  content: "<";
+  margin-right: 2px;
 }
