@@ -1617,7 +1617,7 @@ li.profile img {
 
 .chat-send {
   display: table;
-  height: 100%;
+  height: 90%;
   width: 100%;
   position: relative;
 }
